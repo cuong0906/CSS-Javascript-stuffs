@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read More / Less More</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="icon">
+                <img src="icons/computer.png"/>
+            </div>
+            <div class="content">
+                <h3>Web & Mobile development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius et facere impedit magnam iusto optio harum vel quos, incidunt consectetur aperiam ea excepturi cumque delectus tempora debitis nesciunt in dolorem placeat quae deleniti sequi? Ratione officiis voluptas optio incidunt facere quam excepturi consequatur ab provident a corporis, quaerat, culpa tempora fugit recusandae mollitia quis minus, tenetur accusamus sed? Quisquam, enim.</p>
+            </div>
+            <a class="more"></a>
+        </div>
+        
+        <div class="card">
+            <div class="icon">
+                <img src="icons/support.png"/>
+            </div>
+            <div class="content">
+                <h3>Customer Support</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius et facere impedit magnam iusto optio harum vel quos, incidunt consectetur aperiam ea excepturi cumque delectus tempora debitis nesciunt in dolorem placeat quae deleniti sequi? Ratione officiis voluptas optio incidunt facere quam excepturi consequatur ab provident a corporis, quaerat, culpa tempora fugit recusandae mollitia quis minus, tenetur accusamus sed? Quisquam, enim.</p>
+            </div>
+            <a class="more"></a>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="icons/affiliate-marketing.png"/>
+            </div>
+            <div class="content">
+                <h3>Marketing & Communication</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius et facere impedit magnam iusto optio harum vel quos, incidunt consectetur aperiam ea excepturi cumque delectus tempora debitis nesciunt in dolorem placeat quae deleniti sequi? Ratione officiis voluptas optio incidunt facere quam excepturi consequatur ab provident a corporis, quaerat, culpa tempora fugit recusandae mollitia quis minus, tenetur accusamus sed? Quisquam, enim.</p>
+            </div>
+            <a class="more"></a>
+        </div>
+    </div>
+    <script>
+        let more = document.querySelectorAll('.more');
+        for(let i=0; i<more.length; i++){
+            more[i].addEventListener('click', ()=>{
+                more[i].parentNode.classList.toggle('active');
+            })
+        }
+    </script>
+</body>
+</html>
