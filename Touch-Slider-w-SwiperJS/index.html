@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider with Swiper.js</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img6.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img7.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img8.jpg" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop: true,
+      autoplay:{
+          delay:1000,
+          disableOnInteraction: false,
+      },
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //   },
+    });
+  </script>
+</body>
+</html>
